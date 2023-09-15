@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin: 3rem;
+
+        }
+
+    #search{
+        height: 10px;
+            width: 100px;
+            margin: 3rem;
+            
+
+    }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <input type="text" id="input" value="">
+    <script>
+        var right = 0;
+        var down = 0;
+        document.querySelector('body').addEventListener('keydown', function(e){
+            switch (e.key) {
+                case 'ArrowRight':
+                    right = right + 10;
+                    
+                    break;
+                      case 'ArrowLeft':
+                    right = right - 10;
+                    
+                    break;
+                      case 'ArrowUp':
+                down = down - 10;
+                    
+                    break;
+                      case 'ArrowDown':
+                    down = down + 10;
+
+                    
+                    break;
+            
+                default:
+                    console.log('other key press');
+                    break;
+            }
+            var target = document.querySelector('#box');
+            target.style.marginLeft = right + 'px';
+             target.style.marginTop = down + 'px';
+        })
+    </script>
+
+ 
+</body>
+
+</html>

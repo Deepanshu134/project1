@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: dimgray;
+    overflow: hidden;
+    
+}
+
+.gameContainer{
+    background-image: url(bg.jpg);
+    background-repeat:no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+#scoreCont{
+    font-size: 50px;
+    padding-left: 500px;
+    color: green;
+    background-color: blanchedalmond;
+}
+
+.dino{
+    background-image:url(3e064cab87242f218486aded6a7797c6-fotor-bg-remover-20230823212747.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 130px;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.gameOver{
+    visibility: hidden;
+    font-size: 50px;
+    padding-left: 500px;
+    color: red;
+    background-color:darkslategrey ;
+}
+
+.obstacle{
+    width: 150px;
+    height: 130px;
+    background-image: url(kisspng-clash-of-clans-dragon-goblin-video-gaming-clan-gam-clash-of-clans-5ab83a0cc51cf2.2856754515220229248074-removebg-preview-fotor-bg-remover-20230823205920.png);
+    position: absolute;
+    background-size: cover;
+    left: 64vw;
+    bottom: 0px;
+}
+
+.animateDino{
+    animation: dino 0.9s linear;
+}
+
+.animateDino1{
+    animation: dino1 0.9s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 3s linear infinite;
+}
+
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -100vw;
+    }
+}
