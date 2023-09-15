@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    list-style: none;
+    background-color: burlywood;
+    border: 2px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.search-box {
+    padding-left: 100px;
+    display: flex;
+    
+}
+
+ h3{
+    color: aliceblue;
+}
+
+
+.movies-search{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.search-id{
+
+    padding-left: 100px;
+    display: flex;
+    
+}

@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+body{
+    font-family: serif;
+   background: url("photo-1604147495798-57beb5d6af73.jpg");
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper .container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+   
+    padding: 1rem 0;
+}
+
+.logo p{
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: yellow;
+    font-weight: bold;
+}
+
+
+.search-element{
+    padding-top:  8px;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.search-element h3{
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.search-element .form-control{
+    padding: 10px 1rem;
+    font-size: 1.4rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: blue;
+    width: 250px;
+    background-color: lightslategray;
+    border: none;
+}
+
+.search-list{
+    position: absolute;
+    right: -8px;
+    top: 122px;
+    max-width: 600px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+
+.search-list .search-list-item{
+    background-color: grey;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width:250px; 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+    border: 1px solid black;
+}
+
+.search-list .search-list-item:hover{
+    background-color: #1f1f1f;
+}
+
+
+.search-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.search-list-info h3{
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.search-item-thumbnail img{
+    width: 40px;
+}
+
+.search-list-info p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    opacity: 0.6;
+}
+.search-list::-webkit-scrollbar{
+    width: 8px;
+}
+
+
+.search-list::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.search-list::-webkit-scrollbar-thumb{
+    background-color: yellow;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+.hide-search-list{
+    display: none;
+}
+
+.result-grid{
+   display: flex;
+   padding-left: 2rem;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.result-container{
+    padding: 1rem 0 0 0;
+    justify-content: center;
+
+}
+
+.movie-info{
+    color: greenyellow;
+    padding: 0rem 0 10rem 10rem; 
+    padding-top: 5rem;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+.movie-poster img{
+    width: 500px;
+   height: 350px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
